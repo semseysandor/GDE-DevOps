@@ -1,0 +1,21 @@
+{
+    "name": "semseysandor/gde-devops",
+    "description": "Projektfeladat a GDE mérnökinformatika szak DevOps tárgyához",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Semseysandor\\GdeDevops\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Semsey Sándor",
+            "email": "semseysandor@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.2"
+    }
+}
