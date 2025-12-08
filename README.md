@@ -48,7 +48,7 @@ A projekt tartalmaz egy Dockerfile-t, amely egy image-et épít és az Apache PH
 
 ## Deploy a felhőbe
 
-A projekt elérhető a felhőben a következő címen: [http://gde-devops.es-progress.hu](http://gde-devops.es-progress.hu) a RackForest hálózatán.
+Az app elérhető a felhőben a következő címen: [http://gde-devops.es-progress.hu](http://gde-devops.es-progress.hu) a RackForest hálózatán.
 
 Deploy lépések a felhőbe:
 
