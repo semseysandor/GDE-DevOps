@@ -14,6 +14,7 @@ Ez egy egyszerű PHP webalkalmazás az alap DevOps lépések bemutatására:
 
 - PHP 8.2 vagy újabb
 - Composer
+- Docker (konténerizációhoz)
 
 ## Installálás
 
@@ -44,3 +45,22 @@ A projekt tartalmaz egy Dockerfile-t, amely egy image-et épít és az Apache PH
     ```bash
     docker run -p 8080:80 semseysandor/gde-devops:latest
     ```
+
+## Deploy a felhőbe
+
+A projekt elérhető a felhőben a következő címen: [http://gde-devops.es-progress.hu](http://gde-devops.es-progress.hu) a RackForest hálózatán.
+
+Deploy lépések a felhőbe:
+
+1. Pushold a Docker image-et egy konténer registry-be (pl. Docker Hub):
+   ```bash
+   docker push semseysandor/gde-devops:latest
+   ```
+1. Húzd le a Docker image-et a szerverre:
+   ```bash
+   docker pull semseysandor/gde-devops:latest
+   ```
+1. Futtasd a konténert a szerveren:
+   ```bash
+   docker run -d -p 80:80 semseysandor/gde-devops:latest
+   ```
